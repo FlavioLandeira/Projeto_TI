@@ -1,4 +1,4 @@
-# Projeto_TI
+# Projeto_TI - Galeria de Fotos / Vídeos de Wheelie
 
 Repositório para projeto de Tecnologias de Internet, sobre galeria de fotos/vídeos sobre o desporto wheelie
 
