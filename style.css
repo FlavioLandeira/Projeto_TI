@@ -2,17 +2,23 @@ body {
     margin: 0;
     font-family: 'Segoe UI', 'Lucida Sans', Arial, sans-serif;
     background-color: gray;	
+
+    background-image: url('img/wheelie_fp.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+
  }
 header {
     margin-bottom: 60px;
-    position:fixed;
     padding: 8px;
 
     width: 100%;
 
     background-image: url('img/wg_logo.png');
     background-size: 160px;
-    background-position:50px center;
+    background-position:center;
     background-repeat: no-repeat;
     min-height: 145px;
 
@@ -24,7 +30,7 @@ header h1 {
 nav a {
 	display: inline-block;
     margin-top: 45px;
-    margin-left: 90px;
+    margin-left: 20%;
     
     font-weight: bolder;
     background-color: beige;
@@ -33,7 +39,7 @@ nav a {
     text-decoration:none;
     color: black;
     font-size: 24px;
-    padding-left: 10px;
+    padding-left: 300px;
     padding: 8px;
 }
 nav a:hover {
@@ -44,28 +50,90 @@ nav a:hover {
 nav{
     display: flex;
     padding-bottom: 10px;
-    padding-left: 150px;
-    
-    
+    padding-left: 19%;    
 }
 .firstpage {
+    padding-top: 2px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+
+    margin-bottom: 80px;
+
+    /*min-height: 800px;*/
+}
+#topics { 
+    padding-top: 2px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+
+}
+.topic {
+    box-sizing: border-box;
+    width: 30%;
+    
+    padding: 15px 15px;
+}
+  
+  .overlay {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .overlay img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+  }
+  
+  .overlay:hover img {
+    filter: brightness(20%);
+  }
+  
+  .overlay h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .overlay:hover h3 {
+    opacity: 1;
+  }
+  .topic h3{
+    text-align: center;
+    color:white;
+}
+#topics img {
+     border-radius: 15px;
+     max-width: 100%;
+    }
+
+footer {
+    background-color: black;
+	color: white;
+	display: flex;
+	padding: 70px;
     text-align: center;
 
+}
+.icons {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    font-size: 50px;
 
-    background-image: url('img/wheelie_fp.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 800px;
 }
-.firstpage i {
+footer i{
+    display: inline-block;
     color:beige;
     width: 200px;
-    margin-top: 400px;
-    margin-left: 200px;
-    font-size: 100px;
-
 }
