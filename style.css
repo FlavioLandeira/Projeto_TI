@@ -4,10 +4,10 @@ body {
     background-color: gray;	
 
     background-image: url('img/wheelie_fp.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-blend-mode: soft-light;
+    background-position: left center;
 
  }
 header {
@@ -20,13 +20,20 @@ header {
     background-size: 160px;
     background-position:center;
     background-repeat: no-repeat;
-    min-height: 145px;
+    min-height: 10%;
 
 }
 header h1 {
 	padding-left: 5px;
 	color: black;
 }
+/* Default styles for larger screens */
+nav {
+    display: flex;
+    padding-bottom: 10px;
+    padding-left: 19%;
+}
+
 nav a {
     display: inline-block;
     margin-top: 45px;
@@ -45,7 +52,6 @@ nav a {
     border-radius: 8px; /* Adicionando a linha bege na parte inferior */
 }
 
-/* Efeito de sublinhado ao passar o mouse */
 nav a::before {
     content: '';
     position: absolute;
@@ -59,22 +65,28 @@ nav a::before {
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* Estilos ao passar o mouse por cima */
 nav a:hover {
     background-color: #c6c6b4;
     border-color: #c6c6b4;
     border-radius: 5px;
-    transform: translateY(-3px); /* Efeito de levantar um pouco ao passar o mouse */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumentando um pouco a sombra */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     border-bottom: 3px solid black;
-    border-radius: 8px; /* Adicionando a linha bege na parte inferior */
-
+    border-radius: 8px; 
 }
-nav{
-    display: flex;
-    padding-bottom: 10px;
-    padding-left: 19%;  
-        
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    nav a {
+        margin: 10px 0;
+        text-align: center;
+    }
 }
 .firstpage {
     padding-top: 2px;

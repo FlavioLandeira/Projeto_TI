@@ -1,0 +1,35 @@
+body {
+    background-image: url('img/wheelie_fp.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+h1 {
+    color:black;
+    text-align: center;
+    font-family: 'Segoe UI', 'Lucida Sans', Arial, sans-serif;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    background-color: rgba(245,245,220, 0.7);
+    width: 80%; 
+    margin: auto; 
+    border-radius: 15px;
+}
+
+.gallery-item {
+    margin: 10px;
+}
+
+.gallery-item img,
+.gallery-item video {
+    display: block; /* Adiciona esta linha para centralizar */
+    max-width: 100%;
+    height: auto;
+    margin: auto; /* Garante a centralização horizontal */
+    border-radius: 15px;
+}
