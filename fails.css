@@ -1,35 +1,117 @@
 body {
+    margin: 0;
     background-image: url('img/wheelie_fp.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: soft-light;
+    text-align: center;
 }
 h1 {
-    color:black;
+    color:beige;
     text-align: center;
-    font-family: 'Segoe UI', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Rockwell', serif;
+    font-size: 56px;
+    background-color: rgba(40, 40, 39, 0.7);
+
+}
+.VoltarAtras {
+    text-decoration: none;
+    font-family: 'Rockwell', serif; 
+    font-size: larger;
+    color: rgb(67, 66, 66);
+    background-color: beige;
+    padding: 10px 20px; 
+    border-radius: 15px;
+    margin: 10px 0;
+}
+.VoltarAtras:hover {
+    font-family: 'Rockwell', serif;
+    background-color: rgb(190, 190, 168);
 }
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-    background-color: rgba(245,245,220, 0.7);
-    width: 80%; 
-    margin: auto; 
+    align-items: center; 
+    background-color: rgba(40, 40, 39, 0.7);
+    width: 80%;
+    margin: 20px auto; 
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.gallery:hover {
+    background-color: rgba(40, 40, 39, 0.9);
 }
 
 .gallery-item {
-    margin: 10px;
-}
-
-.gallery-item img,
-.gallery-item video {
-    display: block; /* Adiciona esta linha para centralizar */
+    margin: 6px;
+    display: block;
     max-width: 100%;
     height: auto;
-    margin: auto; /* Garante a centralização horizontal */
+    margin: 20px; 
     border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(0.85);
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto;
+    border-radius: 15px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        width: 90%;
+    }
+
+    .gallery-item {
+        width: 78%;
+    }
+}
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons i {
+    font-size: 100px; 
+    color: beige;
+    margin: 25px; 
+}
+
+.icons a {
+    color: black; 
+    text-decoration: none; 
+}
+
+@media (max-width: 650px) {
+    footer {
+        padding: 40px;
+    }
+    .icons i {
+        font-size: 60px; 
+        margin: 5px; 
+    }
 }

@@ -1,0 +1,85 @@
+body {
+    font-family: 'Rockwell', serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.oquee {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    align-items: center;
+}
+
+.oquee h1 {
+    color: #333;
+}
+
+.oquee p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.imgs img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons i {
+    font-size: 100px; 
+    color: beige;
+    margin: 25px; 
+}
+
+.icons a {
+    color: black; 
+    text-decoration: none; 
+}
+
+@media (max-width: 650px) {
+    footer {
+        padding: 40px;
+    }
+    .icons i {
+        font-size: 60px; 
+        margin: 5px; 
+    }
+}
+.VoltarAtras {
+    text-decoration: none;
+    font-family: 'Rockwell', serif; 
+    font-size: larger;
+    color: rgb(67, 66, 66);
+    background-color: rgb(197, 197, 175);
+    padding: 10px 20px; 
+    border-radius: 15px;
+    margin: 10px 0;
+
+}
+.VoltarAtras:hover {
+    font-family: 'Rockwell', serif;
+    background-color: rgb(137, 137, 122);
+}
+

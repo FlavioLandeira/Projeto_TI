@@ -1,6 +1,6 @@
 body { 
     margin: 0;
-    font-family: 'Segoe UI', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Rockwell', serif;
     background-color: gray;	
 
     background-image: url('img/wheelie_fp.jpg');
@@ -13,11 +13,10 @@ body {
 header {
     margin-bottom: 60px;
     padding: 8px;
-
     width: 100%;
 
     background-image: url('img/WG_Logo.svg');
-    background-size: 160px;
+    background-size: 130px;
     background-position:center;
     background-repeat: no-repeat;
     min-height: 10%;
@@ -27,7 +26,6 @@ header h1 {
 	padding-left: 5px;
 	color: black;
 }
-/* Default styles for larger screens */
 nav {
     display: flex;
     padding-bottom: 10px;
@@ -49,7 +47,7 @@ nav a {
     overflow: hidden;
     transition: color 0.4s, transform 0.4s;
     border-bottom: 3px solid beige;
-    border-radius: 8px; /* Adicionando a linha bege na parte inferior */
+    border-radius: 8px;
 }
 
 nav a::before {
@@ -75,7 +73,6 @@ nav a:hover {
     border-radius: 8px; 
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -111,24 +108,24 @@ nav a:hover {
     padding: 15px 15px;
 }
   
-  .overlay {
+.overlay {
     position: relative;
     display: inline-block;
     overflow: hidden;
   }
   
-  .overlay img {
+.overlay img {
     display: block;
     width: 100%;
     height: auto;
     transition: 0.5s ease;
   }
   
-  .overlay:hover img {
+.overlay:hover img {
     filter: brightness(20%);
   }
   
-  .overlay h3 {
+.overlay h3 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -141,10 +138,10 @@ nav a:hover {
     transition: opacity 0.5s ease;
   }
   
-  .overlay:hover h3 {
+.overlay:hover h3 {
     opacity: 1;
   }
-  .topic h3{
+.topic h3{
     text-align: center;
     color:white;
 }
@@ -157,10 +154,12 @@ footer {
     background-color: black;
 	color: white;
 	display: flex;
-	padding: 70px;
+	padding: 100px;
     text-align: center;
 }
 .icons {
+    color:black;
+    text-decoration: none;
     margin-left: auto;
     margin-right: auto;
     font-size: 50px;
@@ -170,4 +169,8 @@ footer i{
     display: inline-block;
     color:beige;
     width: 200px;
+}
+.icons a {
+    color: black; 
+    text-decoration: none; 
 }
